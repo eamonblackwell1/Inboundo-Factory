@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
+import { siteConfig } from "@/lib/config";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -17,8 +18,8 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Seikoro Ryokan | 清香楼 | The Kyoto Sanctuary",
-  description: "Experience the timeless luxury of Seikoro Ryokan. Established 1831 on the banks of the Kamo River in Kyoto, Japan.",
+  title: siteConfig.meta.title,
+  description: siteConfig.meta.description,
 };
 
 export default function RootLayout({
