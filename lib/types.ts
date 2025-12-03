@@ -126,7 +126,7 @@ export interface SiteConfig {
     sectionLabel: string;
     headline: string;
   };
-  location: string;
+  location: LocationContent;
   footerCta: FooterCta;
   
   // Business Logic

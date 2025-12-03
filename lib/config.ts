@@ -4,7 +4,18 @@ export const siteConfig: SiteConfig = {
   // 1. Identity & Branding
   ryokanName: "Kyoto Garden Ryokan Yachiyo",
   verticalText: "京都 南禅寺 八千代",
-  location: "Nanzen-ji, Kyoto",
+  location: {
+    sectionLabel: "LOCATION",
+    headline: "A Sanctuary in Higashiyama",
+    description: "Located steps from the historic Nanzen-ji Temple, Yachiyo offers a quiet retreat surrounded by Kyoto's most scenic heritage sites.",
+    mapImage: "/images/map_bg.jpg",
+    mapImageAlt: "Map showing the location of Kyoto Garden Ryokan Yachiyo near Nanzen-ji Temple in Higashiyama, Kyoto",
+    pinPosition: {
+      top: "45%",
+      leftMobile: "50%",
+      leftDesktop: "50%",
+    },
+  },
 
   // 2. Hero Section
   hero: {
