@@ -1,15 +1,164 @@
 import { SiteConfig } from './types';
 
 export const siteConfig: SiteConfig = {
-  // 1. Identity & Branding
-  ryokanName: "Kyoto Garden Ryokan Yachiyo",
-  verticalText: "京都 南禅寺 八千代",
+  // Identity
+  name: "Kyoto Garden Ryokan Yachiyo",
+  nameJapanese: "京都 南禅寺 八千代",
+  tagline: "A historic masterpiece where the legendary Shakkei garden becomes your private horizon.",
+  description: "Established 1915. Experience traditional Japanese hospitality in a Registered Tangible Cultural Property, surrounded by the legendary Seiryu-tei garden designed by Jihei Ogawa.",
+
+  // Meta / SEO
+  meta: {
+    title: "Kyoto Garden Ryokan Yachiyo | Nanzen-ji Temple | Historic Ryokan",
+    description: "Experience authentic Japanese hospitality at Kyoto Garden Ryokan Yachiyo. Established 1915, featuring legendary Shakkei gardens, traditional kaiseki cuisine, and historic architecture near Nanzen-ji Temple.",
+  },
+
+  // Visuals
+  heroImage: "/images/hero 1.jpg",
+  heroImageAlt: "The legendary Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, a historic masterpiece near Nanzen-ji Temple",
+  galleryImages: [
+    "/images/hero 1.jpg",
+    "/images/food 1.jpg",
+    "/images/room 1.jpg",
+  ],
+
+  // Booking
+  booking: {
+    url: "https://reserve.489ban.net/client/ryokan-yachiyo/4/plan",
+    buttonLabel: "Check Availability",
+    buttonLabelMobile: "Book Now",
+    priceText: "From ¥45,000 per night",
+  },
+
+  // Features / Three Pillars
+  features: [
+    {
+      title: "The Seiryu-tei Garden",
+      description: "Designed by the legendary Jihei Ogawa. A living masterpiece that changes with the seasons, viewable directly from your tatami room.",
+      iconName: "Sparkles",
+      image: "/images/hero 1.jpg",
+      imageAlt: "The Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, designed by legendary garden master Jihei Ogawa",
+    },
+    {
+      title: "Kyoto Kaiseki Cuisine",
+      description: "Famous for our Yudofu (Hot Tofu) and seasonal kaiseki, served in the privacy of your room or overlooking the gardens.",
+      iconName: "Utensils",
+      image: "/images/food 1.jpg",
+      imageAlt: "Traditional Kyoto kaiseki cuisine featuring seasonal ingredients and Yudofu, served at Ryokan Yachiyo",
+    },
+    {
+      title: "Historic Architecture",
+      description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
+      iconName: "BedDouble",
+      image: "/images/room 1.jpg",
+      imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
+    },
+  ],
+
+  // Mobile-specific features
+  featuresMobile: [
+    {
+      title: "The Seiryu-tei Garden",
+      description: "Designed by the legendary Jihei Ogawa. A living masterpiece that changes with the seasons, viewable directly from your tatami room.",
+      iconName: "Sparkles",
+      image: "/images/hero 1.jpg",
+      imageAlt: "The Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, designed by legendary garden master Jihei Ogawa",
+    },
+    {
+      title: "Kyoto Kaiseki Cuisine",
+      description: "Famous for our Yudofu (Hot Tofu) and seasonal kaiseki, served in the privacy of your room or overlooking the gardens.",
+      iconName: "Utensils",
+      image: "/images/food 1.jpg",
+      imageAlt: "Traditional Kyoto kaiseki cuisine featuring seasonal ingredients and Yudofu, served at Ryokan Yachiyo",
+    },
+    {
+      title: "Historic Architecture",
+      description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
+      iconName: "BedDouble",
+      image: "/images/room 1.jpg",
+      imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
+    },
+  ],
+
+  // Incentives / Trust Bar
+  incentives: [
+    "Free WiFi",
+    "Traditional Onsen",
+    "Kaiseki Dining",
+    "Garden Views",
+  ],
+
+  // Testimonials
+  testimonials: [
+    {
+      quote: "An unforgettable experience. The garden views from our room were breathtaking, and the kaiseki dinner was exceptional.",
+      author: "Sarah M., Tokyo",
+    },
+    {
+      quote: "The perfect blend of history and comfort. Waking up to the Seiryu-tei garden was like stepping into a painting.",
+      author: "James L., London",
+    },
+    {
+      quote: "Authentic Japanese hospitality at its finest. The attention to detail and serene atmosphere made our stay truly special.",
+      author: "Maria K., New York",
+    },
+  ],
+
+  testimonialsMobile: [
+    {
+      quote: "An unforgettable experience. The garden views from our room were breathtaking, and the kaiseki dinner was exceptional.",
+      author: "Sarah M., Tokyo",
+    },
+    {
+      quote: "The perfect blend of history and comfort. Waking up to the Seiryu-tei garden was like stepping into a painting.",
+      author: "James L., London",
+    },
+  ],
+
+  // Contact
+  contact: {
+    address: {
+      line1: "34 Nanzenji Fukuji-cho, Sakyo-ku",
+      line2: "Kyoto 606-8435, Japan",
+    },
+    email: "info@ryokan-yachiyo.com",
+    phone: "+81-75-771-4148",
+    mapsUrl: "https://maps.google.com/?q=34+Nanzenji+Fukuji-cho,+Sakyo-ku,+Kyoto+606-8435",
+  },
+
+  // Content Sections
+  hero: {
+    establishment: "The Garden Sanctuary of Nanzen-ji",
+    headline: "The Garden Sanctuary of Nanzen-ji",
+    tagline: "Established 1915. A historic masterpiece where the legendary Shakkei garden becomes your private horizon.",
+    ctaLabel: "Check Availability",
+  },
+
+  intro: {
+    sectionLabel: "WELCOME",
+    headline: "A Legacy of",
+    headlineAccent: "Timeless Elegance",
+    description: "For over a century, Kyoto Garden Ryokan Yachiyo has welcomed guests to experience the essence of traditional Japanese hospitality. Nestled beside the historic Nanzen-ji Temple, our ryokan offers a rare opportunity to stay within a Registered Tangible Cultural Property, where every detail honors the craftsmanship and philosophy of Sukiya-zukuri architecture.",
+    image: "/images/hero 1.jpg",
+    imageAlt: "Traditional Japanese architecture and garden at Kyoto Garden Ryokan Yachiyo",
+  },
+
+  pillars: {
+    sectionLabel: "EXPERIENCE",
+    headline: "The Three Pillars of Yachiyo",
+  },
+
+  reflections: {
+    sectionLabel: "GUEST REFLECTIONS",
+    headline: "Stories from Our Visitors",
+  },
+
   location: {
     sectionLabel: "LOCATION",
     headline: "A Sanctuary in Higashiyama",
-    description: "Located steps from the historic Nanzen-ji Temple, Yachiyo offers a quiet retreat surrounded by Kyoto's most scenic heritage sites.",
     mapImage: "/images/map_bg.jpg",
     mapImageAlt: "Map showing the location of Kyoto Garden Ryokan Yachiyo near Nanzen-ji Temple in Higashiyama, Kyoto",
+    description: "Located steps from the historic Nanzen-ji Temple, Yachiyo offers a quiet retreat surrounded by Kyoto's most scenic heritage sites.",
     pinPosition: {
       top: "45%",
       leftMobile: "50%",
@@ -17,39 +166,15 @@ export const siteConfig: SiteConfig = {
     },
   },
 
-  // 2. Hero Section
-  hero: {
-    headline: "The Garden Sanctuary of Nanzen-ji.",
-    subheadline: "Established 1915. A historic masterpiece where the legendary Shakkei garden becomes your private horizon.",
-    ctaText: "Check Availability",
-    // Hotlink to their current engine to minimize friction
-    bookingUrl: "https://reserve.489ban.net/client/ryokan-yachiyo/4/plan",
+  footerCta: {
+    sectionLabel: "RESERVE YOUR STAY",
+    headline: "Begin Your Journey",
+    ctaLabel: "Check Availability",
   },
 
-  // 3. Features (Bento Grid)
-  features: [
-    {
-      title: "The Seiryu-tei Garden",
-      description: "Designed by the legendary Jihei Ogawa. A living masterpiece that changes with the seasons, viewable directly from your tatami room.",
-      imagePath: "/images/hero 1.jpg", 
-    },
-    {
-      title: "Kyoto Kaiseki Cuisine",
-      description: "Famous for our Yudofu (Hot Tofu) and seasonal kaiseki, served in the privacy of your room or overlooking the gardens.",
-      imagePath: "/images/food 1.jpg",
-    },
-    {
-      title: "Historic Architecture",
-      description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
-      imagePath: "/images/room 1.jpg",
-    },
-  ],
+  // Business Logic
+  vertical: "ryokan",
 
-  // 4. Contact / Footer
-  contact: {
-    address: "34 Nanzenji Fukuji-cho, Sakyo-ku, Kyoto 606-8435",
-    phone: "+81-75-771-4148",
-    email: "info@ryokan-yachiyo.com",
-    instagram: "https://www.instagram.com/kyoto_yachiyo", 
-  },
+  // Copyright
+  copyright: "© 2024 Kyoto Garden Ryokan Yachiyo. All rights reserved.",
 };
