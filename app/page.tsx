@@ -60,13 +60,17 @@ export default function Home() {
     transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] as const }
   };
 
+  const address = `${siteConfig.contact.address.line1}, ${siteConfig.contact.address.line2}`;
+  const mapQuery = `${siteConfig.name} ${address}`;
+  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery)}&t=m&z=15&output=embed&iwloc=near`;
+
   return (
     <main className="min-h-screen bg-washi text-stone-800 selection:bg-moss selection:text-white overflow-x-hidden">
       
       {/* ═══════════════════════════════════════════════════════════════
           HERO SECTION - With Vertical Japanese Typography
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pb-20 md:pb-32">
+      <section className="relative min-h-[110vh] w-full flex items-center justify-center overflow-hidden pb-32 md:pb-48">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image 
@@ -90,12 +94,12 @@ export default function Home() {
         </div>
 
         {/* Main Hero Content */}
-        <div className="relative z-10 w-full px-4 pb-32">
+        <div className="relative z-10 w-full px-4 pb-32 pl-16 md:pl-0">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className="text-center mx-auto max-w-xl md:max-w-3xl px-2 py-6 md:px-8 md:py-8 bg-transparent md:bg-stone-950/35 md:border md:border-white/8 md:backdrop-blur-sm shadow-none md:shadow-[0_15px_30px_rgba(0,0,0,0.25)]"
+            className="text-center mx-auto max-w-xl md:max-w-3xl px-2 py-6 md:px-8 md:py-8 shadow-none md:shadow-[0_15px_30px_rgba(0,0,0,0.25)]"
           >
             <p className="text-white/90 tracking-[0.5em] text-sm md:text-base uppercase mb-4 md:mb-5 font-medium drop-shadow-[0_4px_12px_rgba(0,0,0,0.75)]">
               {siteConfig.hero.establishment}
@@ -207,7 +211,7 @@ export default function Home() {
                   <div className="absolute bottom-8 left-8 text-white">
                     <OnsenIcon className="w-6 h-6 mb-3 text-gold" />
                     <h3 className="font-serif text-4xl mb-2 font-light">{onsen.title}</h3>
-                    <p className="text-white/70 text-base tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p className="text-white/80 text-base leading-snug tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {onsen.description}
                     </p>
                   </div>
@@ -232,7 +236,7 @@ export default function Home() {
                   <div className="absolute bottom-8 left-8 text-white">
                     <KaisekiIcon className="w-6 h-6 mb-3 text-gold" />
                     <h3 className="font-serif text-3xl mb-2 font-light">{kaiseki.title}</h3>
-                    <p className="text-white/70 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p className="text-white/80 text-base leading-snug tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {kaiseki.description}
                     </p>
                   </div>
@@ -257,7 +261,7 @@ export default function Home() {
                   <div className="absolute bottom-8 left-8 text-white">
                     <GardenIcon className="w-6 h-6 mb-3 text-gold" />
                     <h3 className="font-serif text-3xl mb-2 font-light">{garden.title}</h3>
-                    <p className="text-white/70 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p className="text-white/80 text-base leading-snug tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {garden.description}
                     </p>
                   </div>
@@ -282,7 +286,7 @@ export default function Home() {
                   <div className="absolute bottom-8 left-8 text-white">
                     <TatamiIcon className="w-6 h-6 mb-3 text-gold" />
                     <h3 className="font-serif text-4xl mb-2 font-light">{tatami.title}</h3>
-                    <p className="text-white/70 text-base tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p className="text-white/80 text-base leading-snug tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {tatami.description}
                     </p>
                   </div>
@@ -299,18 +303,20 @@ export default function Home() {
               const ItemIcon = iconMap[item.iconName];
               return (
                 <div key={i} className="relative h-[300px] overflow-hidden">
-                  <Image 
+                  <Image
                     src={item.image} 
                     alt={item.imageAlt}
                     fill
                     sizes="100vw"
                     className="object-cover brightness-[0.85]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 text-white">
                     <ItemIcon className="w-5 h-5 mb-2 text-gold" />
                     <h3 className="font-serif text-2xl font-light">{item.title}</h3>
-                    <p className="text-white/70 text-xs tracking-wider uppercase mt-1">{item.description}</p>
+                    <p className="text-white/90 text-base leading-snug tracking-wider uppercase mt-1">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               );
@@ -400,14 +406,17 @@ export default function Home() {
 
           {/* Map Card - Sharp Corners */}
           <div className="relative h-[500px] w-full overflow-hidden border border-stone-800/15 group">
-            
-            <Image
-              src={siteConfig.location.mapImage}
-              alt={siteConfig.location.mapImageAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, 80vw"
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
-            />
+            <div className="absolute inset-0">
+              <iframe
+                src={mapSrc}
+                width="100%"
+                height="100%"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                aria-label={`${siteConfig.name} location on Google Maps`}
+                className="w-full h-full border-0 grayscale transition-transform duration-1000 group-hover:scale-105"
+              />
+            </div>
 
             {/* Pulsing Pin */}
             <div 
@@ -430,28 +439,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Info Card - Sharp Corners */}
-            <div className="absolute bottom-0 left-0 bg-washi/95 backdrop-blur-sm p-8 max-w-sm border-t border-r border-stone-800/15 z-20">
-              <h3 className="font-serif text-2xl text-stone-800 mb-3">{siteConfig.name} Ryokan</h3>
-              <p className="text-sm text-stone-600 leading-relaxed mb-6">
-                {siteConfig.location.description.split('\n').map((line, i) => (
-                  <span key={i}>
-                    {line}
-                    {i < siteConfig.location.description.split('\n').length - 1 && <br />}
-                  </span>
-                ))}
-              </p>
-              
-              <a 
-                href={siteConfig.contact.mapsUrl} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-moss uppercase tracking-[0.2em] text-xs font-medium hover:text-gold transition-colors duration-300"
-              >
-                Open in Google Maps
-                <ArrowRight className="w-3 h-3" />
-              </a>
-            </div>
           </div>
         </div>
       </section>

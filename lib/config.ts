@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
   },
 
   // Visuals
-  heroImage: "/images/hero 1.jpg",
+  heroImage: "/images/Screenshot 2025-12-04 at 8.19.30 PM.png",
   heroImageAlt: "The legendary Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, a historic masterpiece near Nanzen-ji Temple",
   galleryImages: [
     "/images/hero 1.jpg",
@@ -34,28 +34,28 @@ export const siteConfig: SiteConfig = {
   features: [
     {
       title: "The Seiryu-tei Garden",
-      description: "Designed by the legendary Jihei Ogawa. A living masterpiece that changes with the seasons, viewable directly from your tatami room.",
+      description: "Designed by Jihei Ogawa. A living masterpiece viewable directly from your room.",
       iconName: "Sparkles",
-      image: "/images/hero 1.jpg",
+      image: "/images/Screenshot 2025-12-04 at 8.36.46 PM.png",
       imageAlt: "The Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, designed by legendary garden master Jihei Ogawa",
     },
     {
       title: "Kyoto Kaiseki Cuisine",
-      description: "Famous for our Yudofu (Hot Tofu) and seasonal kaiseki, served in the privacy of your room or overlooking the gardens.",
+      description: "Famous for our Yudofu and seasonal Kaiseki, served in the privacy of your suite.",
       iconName: "Utensils",
       image: "/images/food 1.jpg",
       imageAlt: "Traditional Kyoto kaiseki cuisine featuring seasonal ingredients and Yudofu, served at Ryokan Yachiyo",
     },
     {
       title: "Historic Architecture",
-      description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
+      description: "A Registered Cultural Property featuring traditional Sukiya-zukuri design.",
       iconName: "BedDouble",
       image: "/images/archi.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
     },
     {
       title: "Tatami Rooms",
-      description: "Experience the serene geometry of traditional tatami suites, each with garden views and handcrafted interiors reflecting centuries of Sukiya-zukuri craftsmanship.",
+      description: "Relax on woven straw mats in suites that frame the garden like a painting.",
       iconName: "Shield",
       image: "/images/room 1.jpg",
       imageAlt: "Traditional tatami room with tatami mats and garden view at Kyoto Garden Ryokan Yachiyo",
@@ -66,28 +66,28 @@ export const siteConfig: SiteConfig = {
   featuresMobile: [
     {
       title: "The Seiryu-tei Garden",
-      description: "Designed by the legendary Jihei Ogawa. A living masterpiece that changes with the seasons, viewable directly from your tatami room.",
+      description: "Designed by Jihei Ogawa. A living masterpiece viewable directly from your room.",
       iconName: "Sparkles",
-      image: "/images/hero 1.jpg",
+      image: "/images/Screenshot 2025-12-04 at 8.36.46 PM.png",
       imageAlt: "The Seiryu-tei garden at Kyoto Garden Ryokan Yachiyo, designed by legendary garden master Jihei Ogawa",
     },
     {
       title: "Kyoto Kaiseki Cuisine",
-      description: "Famous for our Yudofu (Hot Tofu) and seasonal kaiseki, served in the privacy of your room or overlooking the gardens.",
+      description: "Famous for our Yudofu and seasonal Kaiseki, served in the privacy of your suite.",
       iconName: "Utensils",
       image: "/images/food 1.jpg",
       imageAlt: "Traditional Kyoto kaiseki cuisine featuring seasonal ingredients and Yudofu, served at Ryokan Yachiyo",
     },
     {
       title: "Historic Architecture",
-      description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
+      description: "A Registered Cultural Property featuring traditional Sukiya-zukuri design.",
       iconName: "BedDouble",
       image: "/images/archi.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
     },
     {
       title: "Tatami Rooms",
-      description: "Experience the serene geometry of traditional tatami suites, each with garden views and handcrafted interiors.",
+      description: "Relax on woven straw mats in suites that frame the garden like a painting.",
       iconName: "Shield",
       image: "/images/room 1.jpg",
       imageAlt: "Traditional tatami room with tatami mats and garden view at Kyoto Garden Ryokan Yachiyo",
