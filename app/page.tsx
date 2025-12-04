@@ -66,7 +66,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════════════════
           HERO SECTION - With Vertical Japanese Typography
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pb-20 md:pb-32">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image 
