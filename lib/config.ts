@@ -53,6 +53,13 @@ export const siteConfig: SiteConfig = {
       image: "/images/room 1.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
     },
+    {
+      title: "Tatami Rooms",
+      description: "Experience the serene geometry of traditional tatami suites, each with garden views and handcrafted interiors reflecting centuries of Sukiya-zukuri craftsmanship.",
+      iconName: "Shield",
+      image: "/images/room 1.jpg",
+      imageAlt: "Traditional tatami room with tatami mats and garden view at Kyoto Garden Ryokan Yachiyo",
+    },
   ],
 
   // Mobile-specific features
@@ -77,6 +84,13 @@ export const siteConfig: SiteConfig = {
       iconName: "BedDouble",
       image: "/images/room 1.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
+    },
+    {
+      title: "Tatami Rooms",
+      description: "Experience the serene geometry of traditional tatami suites, each with garden views and handcrafted interiors.",
+      iconName: "Shield",
+      image: "/images/room 1.jpg",
+      imageAlt: "Traditional tatami room with tatami mats and garden view at Kyoto Garden Ryokan Yachiyo",
     },
   ],
 
