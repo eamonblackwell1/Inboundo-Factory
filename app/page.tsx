@@ -90,12 +90,12 @@ export default function Home() {
         </div>
 
         {/* Main Hero Content */}
-        <div className="relative z-10 w-full px-4">
+        <div className="relative z-10 w-full px-4 pb-32">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className="text-center mx-auto max-w-xl md:max-w-3xl px-2 py-6 md:px-12 md:py-12 bg-transparent md:bg-stone-950/55 md:border md:border-white/10 md:backdrop-blur-sm shadow-none md:shadow-[0_25px_45px_rgba(0,0,0,0.45)]"
+            className="text-center mx-auto max-w-xl md:max-w-3xl px-2 py-6 md:px-8 md:py-8 bg-transparent md:bg-stone-950/35 md:border md:border-white/8 md:backdrop-blur-sm shadow-none md:shadow-[0_15px_30px_rgba(0,0,0,0.25)]"
           >
             <p className="text-white/90 tracking-[0.5em] text-sm md:text-base uppercase mb-4 md:mb-5 font-medium drop-shadow-[0_4px_12px_rgba(0,0,0,0.75)]">
               {siteConfig.hero.establishment}
@@ -363,7 +363,7 @@ export default function Home() {
 
           {/* Mobile: Stacked with horizontal dividers */}
           <div className="md:hidden border border-stone-800/15 divide-y divide-stone-800/15">
-            {siteConfig.testimonialsMobile.map((testimonial, i) => (
+            {siteConfig.testimonials.map((testimonial, i) => (
               <div key={i} className="p-8">
                 {/* 5-Star Rating */}
                 <div className="flex gap-1.5 mb-4">

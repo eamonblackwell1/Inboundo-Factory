@@ -50,7 +50,7 @@ export const siteConfig: SiteConfig = {
       title: "Historic Architecture",
       description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
       iconName: "BedDouble",
-      image: "/images/room 1.jpg",
+      image: "/images/archi.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
     },
     {
@@ -82,7 +82,7 @@ export const siteConfig: SiteConfig = {
       title: "Historic Architecture",
       description: "A Registered Tangible Cultural Property. Experience the silence and shadow of traditional Sukiya-zukuri design.",
       iconName: "BedDouble",
-      image: "/images/room 1.jpg",
+      image: "/images/archi.jpg",
       imageAlt: "Traditional tatami room with Sukiya-zukuri architecture at Kyoto Garden Ryokan Yachiyo",
     },
     {
