@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { config } from "@/lib/config";
 
 const cormorant = Cormorant_Garamond({
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${cormorant.variable} ${notoSerifJP.variable} antialiased bg-stone-50 text-stone-900`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
